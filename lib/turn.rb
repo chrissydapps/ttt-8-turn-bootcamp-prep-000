@@ -19,7 +19,7 @@ def valid_move?(board, index)
 end
 
 def move(board, index, player = "X")
-  board[index] = character
+  board[index] = player
   puts "#{display_board(board)}"
 end
 
