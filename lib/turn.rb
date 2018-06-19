@@ -18,7 +18,7 @@ def valid_move?(board, index)
   (position_taken?(board, index) == false && index.between?(0, 8)) ? true : false
 end
 
-def move(board, index, character = "X")
+def move(board, index, player = "X")
   board[index] = character
   puts "#{display_board(board)}"
 end
